@@ -1,0 +1,51 @@
+
+1.
+
+Bài toán :
+{{1, 2}, {3, 4}, {5, 6}}
+output:
+{1, 2, 3, 4, 5, 6}
+lời giải
+let
+    // Danh sách chứa các danh sách nhỏ
+    NestedList = {{1, 2}, {3, 4}, {5, 6}},
+    // Tách thành danh sách lớn
+    FlattenedList = List.Combine(NestedList)
+in
+    FlattenedList
+
+2.
+Bài toán :
+list={1,2,3,4}
+output:
+{{1, 2}, {3, 4}}
+
+Lời giải:
+C1.List.Split(list,2) //as list
+C2. dùng accumlate lặp qua từng danh sách nhỏ trong danh sách lớn 
+let
+    // Danh sách chứa các danh sách nhỏ
+    NestedList = {{1, 2}, {3, 4}, {5, 6}},
+    // Tách thành danh sách lớn
+    FlattenedList = List.Accumulate(NestedList, {}, (state, current) => state & current)
+in
+    FlattenedList
+
+
+
+3.tạo danh sách n số 1 cho trước 
+List=List.repeat({1},n)
+{1,1,1...1} 
+
+
+4.Tachs 
+ListData = {
+        "Power Query, Excel",                   
+        "Trading",
+        "Fashion"}
+output
+{Power Query,Excel,Trading,Fashion}
+
+SplitLists = List.Transform(ListData, each Text.Split(_, ", ")),
+// Gộp tất cả danh sách nhỏ thành một danh sách lớn
+FlattenedList = List.Combine(SplitLists)
