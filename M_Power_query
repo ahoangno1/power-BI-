@@ -49,3 +49,9 @@ output
 SplitLists = List.Transform(ListData, each Text.Split(_, ", ")),
 // Gộp tất cả danh sách nhỏ thành một danh sách lớn
 FlattenedList = List.Combine(SplitLists)
+
+
+5.input List{"Total---0 PAST DUE---$10 DISC--1 AC---9"}
+output
+List{"Total---0||PAST DUE---$10||DISC--1||AC---9"}
+6.
