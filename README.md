@@ -10,3 +10,5 @@ https://www.youtube.com/watch?v=j5JITBoTMEs&list=PL5j5wc-75QxWPAK4VZ6ralGXhhzGc0
 Link làm 25 bài tập liên quan đến DAX
 https://curbal.com/25-days-of-dax-fridays-challenge
 
+Link học power query editor M 
+https://www.youtube.com/@GoodlyChandeep
