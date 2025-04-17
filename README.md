@@ -12,3 +12,6 @@ https://curbal.com/25-days-of-dax-fridays-challenge
 
 Link học power query editor M 
 https://www.youtube.com/@GoodlyChandeep
+
+Link roadmap 100 ngay Data science
+https://www.facebook.com/share/p/1C1Nsh8Mrt/
